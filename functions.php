@@ -20,11 +20,6 @@ function load_js()
 }
 add_action('wp_enqueue_scripts','load_js');
 
-//Custom JS
-function theme_enqueue_scripts() {
-    wp_enqueue_script('menu-toggle', get_template_directory_uri() . '/js/menu.js', array(), '1.0', true);
-}
-add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 
 //Theme Options
 
